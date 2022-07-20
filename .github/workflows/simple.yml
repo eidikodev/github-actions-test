@@ -1,6 +1,9 @@
 name : Shell Commands
 
-on : [push]
+on:
+  repository_dispatch:
+    typers: [build]
+  
 
 jobs:
   run-shell-command:
